@@ -1,4 +1,6 @@
 # Maven
+trigger:  
+    batch: true
 steps:
   - task: Maven@3
     inputs:
