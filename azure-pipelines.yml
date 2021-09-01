@@ -1,6 +1,10 @@
 # Maven
 trigger:  
-    batch: true
+    - master
+pool:
+  vmImage: ubuntu-latest
+  demands: Limit -equals DisAbleParallel 
+
 steps:
   - task: Maven@3
     inputs:
